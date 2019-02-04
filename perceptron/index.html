@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Perceptron</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+</head>
+<body style="width: 100%; height: 100vh; background-color: black; overflow-y: hidden;">
+	<div style="width: 100%; height: 80%; display: flex; justify-content: center; align-items: center;">
+		<canvas id="canvas" width="600" height="600" style="margin-left: 600px;"></canvas>
+		<canvas id="perceptronCanvas" width="600" height="600" style="position: relative; left: -600px;"></canvas>
+	</div>
+
+	<div style="padding-top: 10px; display: flex; justify-content: center; background-color: white; font-size: 35px; font-family: monospace;">
+		Define a line:
+		y = 
+		<input type="number" value="3" id="m"
+			style="outline: none; font-size: 35px; width: 100px; text-align: center; border: none; border-bottom: lightgreen 6px solid;">
+		 &#x1D465; +
+		<input type="number" value="2" id="c"
+			style="outline: none; font-size: 35px; width: 100px; text-align: center; border: none; border-bottom: lightgreen 6px solid;">
+		<button onclick="start()"
+			style="margin: 5px; width: 60px; border-radius: 20px; cursor: pointer; background-color: lightgreen;">
+			Go!</button>
+	</div>
+	
+	<script src="canvasSetup.js"></script>
+	<script src="Perceptron.js"></script>
+	<script src="Line.js"></script>
+	<script src="Point.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
